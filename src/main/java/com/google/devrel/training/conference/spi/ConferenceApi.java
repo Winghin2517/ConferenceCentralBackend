@@ -186,6 +186,7 @@ public class ConferenceApi {
         return ofy().load().key(Key.create(Profile.class, getUserId(user))).now();
     }
     
+    /** This will allow the android app to get the blobStoreService URL so that it can upload a picture to the BlobStore **/
     @ApiMethod(name = "getBlobUrl", path = "getBlobUrl", httpMethod = HttpMethod.GET)
     public BlobUrl getBlobUrlForUpload() {
     	
