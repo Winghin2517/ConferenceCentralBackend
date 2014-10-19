@@ -27,7 +27,7 @@
          * so that Google JavaScript library ready in the angular modules.'//booming-order-708.appspot.com/_ah/api' '//' + window.location.host + '/_ah/api' 
          */
         function init() {
-            gapi.client.load('conference', 'v1', null, '//' + window.location.host + '/_ah/api');
+            gapi.client.load('conference', 'v1', null, '//booming-order-708.appspot.com/_ah/api');
             gapi.client.load('oauth2', 'v2', function () {
                 angular.bootstrap(document, ['conferenceApp']);
             });
